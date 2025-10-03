@@ -1,0 +1,22 @@
+uuid: 06e79d62-bb5a-47a9-8aab-7444c5bcfe3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author_by
+    - node.type.blog
+  module:
+    - text
+id: node.blog.field_author_by
+field_name: field_author_by
+entity_type: node
+bundle: blog
+label: Author/By
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

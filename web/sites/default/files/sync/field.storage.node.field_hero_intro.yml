@@ -1,0 +1,19 @@
+uuid: 5343dc74-ce6b-4ccd-8a6c-7e28e153f341
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_hero_intro
+field_name: field_hero_intro
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

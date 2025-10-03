@@ -1,0 +1,43 @@
+uuid: a0e63163-d5a4-4081-857d-0e4993cef831
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.portfolio.field_porto_image
+    - field.field.node.portfolio.field_porto_link
+    - node.type.portfolio
+  module:
+    - link
+    - user
+id: node.portfolio.default
+targetEntityType: node
+bundle: portfolio
+mode: default
+content:
+  field_porto_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_porto_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

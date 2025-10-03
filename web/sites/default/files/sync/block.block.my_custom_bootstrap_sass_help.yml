@@ -1,0 +1,22 @@
+uuid: 8c45177f-0b41-4f0d-a870-50ec8de3700f
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - my_custom_bootstrap_sass
+_core:
+  default_config_hash: vknd-L44mdDq8qnIuKaK0xCgQnzmgwcyN5IbS9wKXjY
+id: my_custom_bootstrap_sass_help
+theme: my_custom_bootstrap_sass
+region: highlighted
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

@@ -1,0 +1,9 @@
+uuid: 43885c60-fbc9-455d-99ca-5b4c59022323
+langcode: en
+status: true
+dependencies: {  }
+name: Categories
+vid: categories
+description: 'Broad content groupings for blog posts (one per post).'
+weight: 0
+new_revision: true

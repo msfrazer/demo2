@@ -1,0 +1,26 @@
+uuid: 11a02bd4-86d4-4782-ba36-8dd793640f85
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_testimonial_desc
+    - filter.format.basic_html
+    - filter.format.full_html
+    - node.type.testimonials
+  module:
+    - text
+id: node.testimonials.field_testimonial_desc
+field_name: field_testimonial_desc
+entity_type: node
+bundle: testimonials
+label: 'Testimonial Summary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - full_html
+field_type: text

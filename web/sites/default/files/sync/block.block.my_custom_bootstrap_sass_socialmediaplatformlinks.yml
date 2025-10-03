@@ -1,0 +1,20 @@
+uuid: e31be973-4525-428b-b948-5a4809e43eee
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_media_platforms
+  theme:
+    - my_custom_bootstrap_sass
+id: my_custom_bootstrap_sass_socialmediaplatformlinks
+theme: my_custom_bootstrap_sass
+region: footer_fifth
+weight: 0
+provider: null
+plugin: social_media_platform_block
+settings:
+  id: social_media_platform_block
+  label: 'Social Media Platform Links'
+  label_display: '0'
+  provider: social_media_platforms
+visibility: {  }

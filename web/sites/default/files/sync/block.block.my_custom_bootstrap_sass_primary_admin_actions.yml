@@ -1,0 +1,20 @@
+uuid: e71f8751-72c4-40f9-b89e-6ad217acfdef
+langcode: en
+status: true
+dependencies:
+  theme:
+    - my_custom_bootstrap_sass
+_core:
+  default_config_hash: pvC_HBlQgA-VUWbVlPHHwHUjLDhgu8eeeRW21BHhjVk
+id: my_custom_bootstrap_sass_primary_admin_actions
+theme: my_custom_bootstrap_sass
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

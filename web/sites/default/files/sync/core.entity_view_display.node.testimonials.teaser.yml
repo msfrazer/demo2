@@ -1,0 +1,59 @@
+uuid: d43bf3bd-ec75-441f-89ed-70d4bf70037f
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.testimonials.field_star_rating
+    - field.field.node.testimonials.field_testimonial_desc
+    - field.field.node.testimonials.field_testimonial_img
+    - node.type.testimonials
+  module:
+    - image
+    - layout_builder
+    - starrating
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.testimonials.teaser
+targetEntityType: node
+bundle: testimonials
+mode: teaser
+content:
+  field_star_rating:
+    type: starrating
+    label: above
+    settings:
+      fill_blank: 0
+      icon_type: star
+      icon_color: 1
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_testimonial_desc:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_testimonial_img:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
