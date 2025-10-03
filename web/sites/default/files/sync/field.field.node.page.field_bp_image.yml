@@ -1,0 +1,33 @@
+uuid: 1c1ddd7a-c9f2-48a3-8cda-287493c05d4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bp_image
+    - media.type.audio
+    - media.type.image
+    - media.type.remote_video
+    - node.type.page
+id: node.page.field_bp_image
+field_name: field_bp_image
+entity_type: node
+bundle: page
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      audio: audio
+      image: image
+      remote_video: remote_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

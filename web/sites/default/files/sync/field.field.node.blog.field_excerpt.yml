@@ -1,0 +1,26 @@
+uuid: 6a50cdd4-7760-4cd8-b8dd-4f62feaec1e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_excerpt
+    - filter.format.basic_html
+    - filter.format.full_html
+    - node.type.blog
+  module:
+    - text
+id: node.blog.field_excerpt
+field_name: field_excerpt
+entity_type: node
+bundle: blog
+label: Excerpt
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - full_html
+field_type: text

@@ -1,0 +1,22 @@
+uuid: 51f6d4de-3637-4120-8a50-8b3b9cf1e91f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_star_rating
+    - node.type.testimonials
+  module:
+    - starrating
+id: node.testimonials.field_star_rating
+field_name: field_star_rating
+entity_type: node
+bundle: testimonials
+label: 'Star Rating'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  max_value: '5'
+field_type: starrating

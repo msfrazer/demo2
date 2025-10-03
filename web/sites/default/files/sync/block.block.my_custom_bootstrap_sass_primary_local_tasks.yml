@@ -1,0 +1,22 @@
+uuid: 2d64a631-536d-435d-bf62-b1e066c8365b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - my_custom_bootstrap_sass
+_core:
+  default_config_hash: S2n1EBq439ZpCC3-Oil26v5qzVKyhROoU95RWKIChNU
+id: my_custom_bootstrap_sass_primary_local_tasks
+theme: my_custom_bootstrap_sass
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

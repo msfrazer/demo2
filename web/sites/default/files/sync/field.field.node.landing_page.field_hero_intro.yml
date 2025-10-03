@@ -1,0 +1,26 @@
+uuid: f174fe85-6c8a-4bba-9ba5-ed4c980f6568
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_intro
+    - filter.format.basic_html
+    - filter.format.full_html
+    - node.type.landing_page
+  module:
+    - text
+id: node.landing_page.field_hero_intro
+field_name: field_hero_intro
+entity_type: node
+bundle: landing_page
+label: 'Hero Intro'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - full_html
+field_type: text_long

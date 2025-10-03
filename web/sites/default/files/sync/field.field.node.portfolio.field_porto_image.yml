@@ -1,0 +1,29 @@
+uuid: b9b25262-db6a-456c-8fd1-d63151f7c743
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_porto_image
+    - media.type.image
+    - node.type.portfolio
+id: node.portfolio.field_porto_image
+field_name: field_porto_image
+entity_type: node
+bundle: portfolio
+label: 'Porto Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

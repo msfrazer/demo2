@@ -1,0 +1,20 @@
+uuid: 3823eade-aea9-4eb2-8735-e42d1937ea6a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: i0snV8Wj--OkRW12UdachUiYiz3FbeMwHu_pZYfzKLc
+name: 'Basic page'
+type: page
+description: 'Basic pages used for your static content.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

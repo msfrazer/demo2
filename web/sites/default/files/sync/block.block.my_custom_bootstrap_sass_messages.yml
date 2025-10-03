@@ -1,0 +1,22 @@
+uuid: c1772bd6-f8bb-4140-bcf9-da5df85f4971
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - my_custom_bootstrap_sass
+_core:
+  default_config_hash: gBEttGO2OjfoozbhxcuUc-N3b1rPei1Y9VPJWeHEMmo
+id: my_custom_bootstrap_sass_messages
+theme: my_custom_bootstrap_sass
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

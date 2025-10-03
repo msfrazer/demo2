@@ -1,0 +1,43 @@
+_core:
+  default_config_hash: Z0796g8NR1VkVkZ7ovY00DnrQnhOFzd4O728qiVwGes
+langcode: en
+display_options:
+  icon_source: image
+  show_label: false
+  target_blank: true
+platforms:
+  facebook:
+    label: Facebook
+    url: 'http://www.facebook.com'
+    font_classes: ''
+    weight: 0
+  instagram:
+    label: Instagram
+    url: 'http://www.instagram.com'
+    font_classes: ''
+    weight: 4
+  linkedin:
+    label: Linkedin
+    url: 'http://www.linkedin.com'
+    font_classes: ''
+    weight: 2
+  pinterest:
+    label: Pinterest
+    url: null
+    font_classes: ''
+    weight: 5
+  tiktok:
+    label: TikTok
+    url: null
+    font_classes: ''
+    weight: 6
+  x:
+    label: X
+    url: null
+    font_classes: ''
+    weight: 3
+  youtube:
+    label: Youtube
+    url: 'http://www.youtube.com'
+    font_classes: ''
+    weight: 1

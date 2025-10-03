@@ -1,0 +1,168 @@
+uuid: 930146f9-b977-457b-a454-7dbf614c7b94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.landing_page.field_hero_cta
+    - field.field.node.landing_page.field_hero_cta_link
+    - field.field.node.landing_page.field_hero_cta_text
+    - field.field.node.landing_page.field_hero_image
+    - field.field.node.landing_page.field_hero_intro
+    - field.field.node.landing_page.layout_builder__layout
+    - node.type.landing_page
+  module:
+    - layout_builder
+    - layout_discovery
+    - link
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          f258812b-0146-41c4-bae8-bb901ed85b63:
+            uuid: f258812b-0146-41c4-bae8-bb901ed85b63
+            region: content
+            configuration:
+              id: 'field_block:node:landing_page:field_hero_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          b00724e0-376c-481a-b2a0-c977a75d47b5:
+            uuid: b00724e0-376c-481a-b2a0-c977a75d47b5
+            region: content
+            configuration:
+              id: 'field_block:node:landing_page:field_hero_cta'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          a99726d7-d675-4b28-a8a4-a023a64cef83:
+            uuid: a99726d7-d675-4b28-a8a4-a023a64cef83
+            region: content
+            configuration:
+              id: 'field_block:node:landing_page:field_hero_cta_text'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          0df6911d-0f76-4416-9951-aa2590ab0610:
+            uuid: 0df6911d-0f76-4416-9951-aa2590ab0610
+            region: content
+            configuration:
+              id: 'field_block:node:landing_page:field_hero_cta_link'
+              label: 'Hero CTA Link'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+        third_party_settings: {  }
+id: node.landing_page.default
+targetEntityType: node
+bundle: landing_page
+mode: default
+content:
+  field_hero_cta:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_hero_cta_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_hero_cta_text:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_hero_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_hero_intro:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_hero_intro_text:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  layout_builder__layout: true
+  links: true

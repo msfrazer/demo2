@@ -1,0 +1,56 @@
+uuid: b288af9e-2b9a-4465-98b9-cd05c9cb25d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.testimonials.field_star_rating
+    - field.field.node.testimonials.field_testimonial_desc
+    - field.field.node.testimonials.field_testimonial_img
+    - image.style.thumbnail
+    - node.type.testimonials
+  module:
+    - image
+    - starrating
+    - text
+id: node.testimonials.default
+targetEntityType: node
+bundle: testimonials
+mode: default
+content:
+  field_star_rating:
+    type: starrating
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_testimonial_desc:
+    type: text_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_testimonial_img:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true
